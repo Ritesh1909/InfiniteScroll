@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    font-family: Staatliches , sans-serif;
+    background-color: #ecebee;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.25'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+h1 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 60px;
+    letter-spacing: 5px;
+}
+
+/* Loader */
+.loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.8) ;
+}
+
+.loader img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* image-container */
+.image-container{
+    margin: 10px 30%;
+}
+
+.image-container img{
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* media query */
+@media screen and (max-width:600px){
+    h1{
+        font-size: 30px;
+    }
+    .image-container{
+        margin: 10px;
+    }
+}
